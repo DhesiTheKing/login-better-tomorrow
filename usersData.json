@@ -1,0 +1,28 @@
+{
+    "users":[{
+        "name": "Dhesi",
+        "email": "dhesi@gmail.com",
+        "password":"Zoro_143"
+    },
+    {
+        "name": "Ashok",
+        "email": "asoke@gmail.com",
+        "password":"kerela_chettan"
+    },
+    {
+        "name": "Zoro",
+        "email": "zoro@gmail.com",
+        "password":"nothing_happened"
+    },
+    {
+        "name": "Luffy",
+        "email": "luffy@gmail.com",
+        "password":"king_of_the_pirates"
+    },
+    {
+        "name": "Guts",
+        "email": "guts@gmail.com",
+        "password":"Humans_are_weak"
+    }
+    ]
+}

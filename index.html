@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <section class="main-login" id="main-login">
+      <div class="login">
+        <h1>LOGIN</h1>
+        <form action="" id="login">
+          <label for="username">USERNAME</label>
+          <input type="text" id="lusername" required />
+          <label for="password">PASSWORD</label>
+          <input type="password" name="pass" id="lpassword" required />
+          <span id="warnning-mge"> </span>
+          <button type="submit">LOGIN</button>
+        </form>
+        <p>
+          Don't have an account <button onclick="EnableSignup()">signup</button>
+        </p>
+      </div>
+    </section>
+    <section class="main-signup" id="main-signup">
+      <div class="signup">
+        <h1>SIGNUP</h1>
+        <form action="">
+          <label for="username">USERNAME</label>
+          <input type="text" id="username" required />
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" required />
+          <label for="password">PASSWORD</label>
+          <input type="password" name="pass" id="password" required />
+          <button type="submit">SIGNUP</button>
+        </form>
+        <p>
+          Already have an account <button onclick="EnableLogin()">login</button>
+        </p>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="login.js"></script>
+  <script>
+    document.getElementById("main-signup").style.display = "none";
+    function EnableLogin() {
+      document.getElementById("main-login").style.display = "block";
+      document.getElementById("main-signup").style.display = "none";
+    }
+
+    function EnableSignup() {
+      document.getElementById("main-login").style.display = "none";
+      document.getElementById("main-signup").style.display = "block";
+    }
+  </script>
+</html>
